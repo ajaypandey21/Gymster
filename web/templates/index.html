@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'img/carousel-1.jpg' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase">Best Gym Center</h5>
+                            <h1 class="display-2 text-white text-uppercase mb-md-4">Build Your Body Strong With Gymster</h1>
+
+                            <a href="/contact/" class="btn btn-light py-md-3 px-md-5">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{% static 'img/carousel-2.jpg' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase">Best Gym Center</h5>
+                            <h1 class="display-2 text-white text-uppercase mb-md-4">Grow Your Strength With Our Trainers</h1>
+                            <a href="/reg/" class="btn btn-primary py-md-3 px-md-5 me-3">Join Us</a>
+                            <a href="/contact/" class="btn btn-light py-md-3 px-md-5">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+
+
+
+
+    <!-- Programe Start -->
+    <div class="container-fluid programe position-relative px-5 mt-5" style="margin-bottom: 135px;">
+        <div class="row g-5 gb-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-light rounded text-center p-5">
+                    <a href="/adlog/">  <img src="https://static.vecteezy.com/system/resources/thumbnails/006/017/842/small_2x/customer-service-icon-user-with-laptop-computer-and-headphone-illustration-free-vector.jpg" height="200" width="200"></a>
+                    <h3 class="text-uppercase my-4">ADMIN</h3>
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-light rounded text-center p-5">
+                    <a href="/memlog/" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_-YRQrSFKPWU1uoGqvnLuWKgwXXV3PpFFYSoZm9nP1iEQn1qXtolI-eJnWZ494XCTrr0&usqp=CAU" height="200" width="200"></a>
+
+                    <h3 class="text-uppercase my-4">MEMBER</h3>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-light rounded text-center p-5">
+                     <a href="/tlog/"> <img src="https://cdn5.vectorstock.com/i/1000x1000/54/94/lesson-teacher-icon-simple-style-vector-27185494.jpg" height="200" width="200"></a>
+                    <h3 class="text-uppercase my-4">TRAINER</h3>
+
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-6 text-center">
+                <h1 class="text-uppercase text-light mb-4">30% Discount For This Summer</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- Programe Start -->
+
+
+
+
+
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid bg-dark facts p-5 my-5">
+        <div class="row gx-5 gy-4 py-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fa fa-star fs-4 text-white"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h5 class="text-secondary text-uppercase">Experience</h5>
+                        <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fa fa-users fs-4 text-white"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h5 class="text-secondary text-uppercase">Our Trainers</h5>
+                        <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fa fa-check fs-4 text-white"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h5 class="text-secondary text-uppercase">Complete Project</h5>
+                        <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fa fa-mug-hot fs-4 text-white"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h5 class="text-secondary text-uppercase">Happy Clients</h5>
+                        <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+    

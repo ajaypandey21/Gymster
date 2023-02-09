@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form method="POST" action="/update/{{employees.id}}" enctype="multipart/form-data">
+      {% csrf_token %}
+      <h3>Update detalis</h3>
+    <table>
+        <tr>
+            <td>Employee firstName:</td>
+            <td><input type="text" name="first_name" id="first_name" required maxlength="20" value="{{ employees.first_name }}"></td>
+        </tr>
+
+        <tr>
+            <td>Employee lastName:</td>
+            <td><input type="text" name="last_name" id="last_name" required maxlength="100" value="{{ employees.last_name }}" ></td>
+        </tr>
+
+        <tr>
+            <td>Employee contact:</td>
+            <td><input type="text" name="phone" id="contact" required maxlength="254" value="{{ employees.phone }}" ></td>
+        </tr>
+        <tr>
+            <td>Employee email:</td>
+            <td><input type="text" name="email"  required maxlength="254" value="{{ employees.email }}" ></td>
+        </tr>
+        <tr>
+            <td>Employee photo:</td>
+            <td><input type="file" name="image" accept="image/*"  required maxlength="254" value="{{ employees.image }}" ></td>
+        </tr>
+
+
+
+        <tr>
+            <td>Employee password:</td>
+            <td><input type="text" name="password" id="password" required maxlength="15" value="{{ employees.password }}"></td>
+
+            <td>
+                 <button type="submit" >update</button>
+
+
+            </td>
+        </tr>
+    </table>
+  </form>
+
+</body>
+</html>
